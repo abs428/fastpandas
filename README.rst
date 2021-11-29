@@ -1,9 +1,4 @@
-Template for the Read the Docs tutorial
-=======================================
+Introduction
+============
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
-
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+This repository contains the source code that builds my old collection of tips and tricks for `pandas`, `numpy` and related tools. I'm indebted to the creators of  readthedocs, `furo`, `sphinx`.

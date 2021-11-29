@@ -1,10 +1,7 @@
-Welcome to Lumache's documentation!
-===================================
+Welcome to "fast" pandas
+========================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**fastpandas** is an odd collection of tips for using `pandas` and other related tools effectively. It is inspired by documents like _`*R Inferno* <https://www.burns-stat.com/pages/Tutor/R_inferno.pdf>` and inherits some of its idiosyncrasies as a result.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.

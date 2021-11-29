@@ -9,10 +9,16 @@ Welcome to "fast" pandas
 
 .. _`R Inferno`: https://www.burns-stat.com/pages/Tutor/R_inferno.pdf
 
+What this is not
+----------------
+If you're looking for a primer on the pandas DataFrame [1]_, `10 minutes to pandas <https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html>`_ is probably what you're looking for. For getting an understanding of Python as used by practitioners of "Data Science", `The Python Data Science Handbook <https://jakevdp.github.io/PythonDataScienceHandbook/>`_ might be a good place to begin. To understand the Python language itself, begin with `Fluent Python <https://www.oreilly.com/library/view/fluent-python/9781491946237/>`_.
+
+.. [1] If on the other hand, you're wondering whether a "DataFrame" is a new kind of dinosaur, please close this tab immediately.
+
 Contents
 --------
 
 .. toctree::
 
-   usage
+   start
    api

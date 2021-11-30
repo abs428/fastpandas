@@ -3,7 +3,7 @@
 # -- Project information
 
 project = "fastpandas"
-author = "Graziella"
+# author = "Abhishek S"
 
 release = "0.1"
 version = "0.1.0"

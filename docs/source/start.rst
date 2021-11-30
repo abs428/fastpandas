@@ -8,7 +8,7 @@ Getting Started
     .. csv-table:: **Commute durations**
         :header: "Starting from", "Destination", "Duration in hours"
         :widths: 10, 10, 10
-        :file: sample_journey.csv
+        :file: ../data/sample_journey.csv
         :align: left
 
     Wagoners can work for **8 hours** straight before they feel the need to rest. Their work involves both riding and "unloading the goods". Unloading invloves siphoning the precious fluid from the barrels on their wagons to small bottles that can be sold to the fashinable that can afford them. Unloading takes about **2 hours at the destination**. After working for 8 hours, the Wagoner takes a short break lasting **30 minutes**. Then he continues working till he has worked for a total of **14 hours**. At this point, his day ends and he falls asleep, irrespective of where he is [#]_ . His "internal clock" resets after a **10 hour** slumber and he's ready for another 14 hours of work.
@@ -20,16 +20,16 @@ Getting Started
     .. csv-table:: **What Wagoner #763 did**
         :header: "Duration in hours", "Activity"
         :widths: 10, 5
-        :file: 763.csv
+        :file: ../data/763.csv
         :align: left
     
-    The Company deals with a lot of deliveries every day and it was getting too hard to keep track of every Wagoner's journey until somebody heard of this new fangled form of magic called `"python" <https://www.python.org/>`_. Practitioners of the craft known as "programmers" only need data in the form of a "spreadsheet" as they call it containing the data like -
+    The Company deals with a lot of deliveries every day and it was getting too hard to keep track of every Wagoner's journey until somebody heard of this new fangled form of magic called `"python" <https://www.python.org/>`_. Practitioners of the craft known as "programmers" only need data in the form of a "spreadsheet" as they call it containing data like -
 
     .. csv-table:: **What the programmer gets**
         :header-rows: 1
-        :file: sample_data.csv
+        :file: ../data/sample_data.csv
     
-    **Translation of the data for humans:** Each record in the dataset refers to a route taken by a Wagoner. :math:`leg_i` where :math:`i \in \{1,2,3,4\}` refers to the duration of the every leg of the journey in hours. If a cell is left blank, that means that the journey has already completed. :math:`flag_i` where :math:`i \in \{1,2,3\}` refers to whether unloading time is considered "work" at that particular destination. Concretely, in the above example, the :math:`0` in the sixth row indicates that unloading time at location #2 is not be considered as work ie:- assume that it takes zero effort and time to perform.
+    **Translation of the data for humans:** Each record in the dataset refers to a route taken by a Wagoner. ``leg_i`` where :math:`i \in \{1,2,3,4\}` refers to the duration of the every leg of the journey in hours. If a cell is left blank, that means that the journey has already completed. ``flag_i`` where :math:`i \in \{1,2,3\}` refers to whether unloading time is considered "work" at that particular destination. Concretely, in the above example, the :math:`0` in the sixth row indicates that unloading time at location #2 is not be considered as work ie:- assume that it takes zero effort and time to perform.
 
     Assuming that all the Wagoners start at the same time from the warehouse, the Company expects the following output -
 

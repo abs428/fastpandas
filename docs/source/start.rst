@@ -31,14 +31,21 @@ Getting Started
     
     **Translation of the data for humans:** Each record in the dataset refers to a route taken by a Wagoner. ``leg_i`` where :math:`i \in \{1,2,3,4\}` refers to the duration of the every leg of the journey in hours. If a cell is left blank, that means that the journey has already completed. ``flag_i`` where :math:`i \in \{1,2,3\}` refers to whether unloading time is considered "work" at that particular destination. Concretely, in the above example, the :math:`0` in the sixth row indicates that unloading time at location #2 is not be considered as work ie:- assume that it takes zero effort and time to perform.
 
-    Assuming that all the Wagoners start at the same time from the warehouse, the Company expects the following output -
+    Assuming that all the Wagoners start at the same date and time from the warehouse, the Company expects the following output -
 
     .. csv-table:: **Expected output**
         :widths: 30, 30, 5, 5
 
-        time elasped after departure from warehourse to the departure to the second location for Wagoner on the route #0, time elasped after departure from first location to the departure to the third location for Wagoner on the route #0 , ..., ...
-        time elasped after departure from warehourse to the departure to the second location for Wagoner on the route #1, time elasped after departure from first location to the departure to the third location for Wagoner on the route #1 , ..., ...
+        date and time of arrival at the first location for Wagoner on the route #0, date and time of arrival at the second location for Wagoner on the route #0 , ..., ...
+        date and time of arrival at the first location for Wagoner on the route #1, date and time of arrival at the second location for Wagoner on the route #1 , ..., ...
         ..., ..., ..., ...
+
+*Specification for the programmer* - Write a function ``create_plan`` whose properties are specified in the docstring.
+
+    .. code-block:: python
+
+        def create_plan():
+            pass
 
 
 .. [#] I'm told that dragons roamed freely in the skies among other ridiculous claims.

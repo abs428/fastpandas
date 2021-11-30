@@ -60,8 +60,8 @@ Getting Started
             Parameters
             ----------
             df: pd.DataFrame
-                The whole dataframe containing the drive times
-                for each leg and flags for changes in location
+                The whole dataframe containing the commute times
+                for each leg and flags
             
             start: datetime
                 The start time of the journey

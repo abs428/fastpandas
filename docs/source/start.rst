@@ -44,7 +44,52 @@ Getting Started
 
     .. code-block:: python
 
-        def create_plan():
+        import pandas as pd
+        from datetime import datetime
+
+        def create_plan(
+            df: pd.DataFrame,
+            start: datetime,
+            work_lim: float,
+            recess: float,
+            long_break: float,
+            short_break: float,
+            overhead: float
+        ) -> pd.DataFrame:
+            """
+            Parameters
+            ----------
+            df: pd.DataFrame
+                The whole dataframe containing the drive times
+                for each leg and flags for changes in location
+            
+            start: datetime
+                The start time of the journey
+            
+            work_lim: float
+                The maximum time the Wagoner can spend working
+                per "day". A day is defined as the interval in between
+                two consecutive periods of slumber.
+            
+            recess: float
+                Duration in hours after which a break is needed
+            
+            long_break: float
+                Duration in hours of a long break a.k.a sleep
+            
+            short_break: float
+                Duration in hours of a short break
+            
+            overhead: float
+                Time taken for unloading the goods
+            
+            Returns
+            -------
+            pd.DataFrame
+                A DataFrame containing all the arrival(?)
+                times for every leg of journey
+            """
+            # Your code here
             pass
 
 

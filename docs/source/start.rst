@@ -11,7 +11,7 @@ Getting Started
         :file: ../data/sample_journey.csv
         :align: left
 
-    Wagoners can work for **8 hours** straight before they feel the need to rest. Their work involves both riding and "unloading the goods". Unloading invloves siphoning the precious fluid from the barrels on their wagons to small bottles that can be sold to the fashinable that can afford them. Unloading takes about **2 hours at the destination**. After working for 8 hours, the Wagoner takes a short break lasting **30 minutes**. Then he continues working till he has worked for a total of **14 hours**. At this point, his day ends and he falls asleep, irrespective of where he is [#]_ . His "internal clock" resets after a **10 hour** slumber and he's ready for another 14 hours of work.
+    Wagoners can work for **8 hours** straight before they feel the need to rest. Their work involves both riding and "unloading the goods". Unloading invloves siphoning the precious fluid from the barrels on their wagons to small bottles that can be sold to the fashionable folk that can afford them. Unloading takes about **2 hours at the destination**. After working for 8 hours, the Wagoner takes a short break lasting **30 minutes**. Then he continues working till he has worked for a total of **14 hours**. At this point, his day ends and he falls asleep, irrespective of where he is [#]_ . His "internal clock" resets after a **10 hour** slumber and he's ready for another 14 hours of work.
 
     By some arcane means, somebody smart at the Company decided that a Wagoner can visit at most 4 towns in one journey [#]_ . The schedule above is of one such long journey. Journeys that have only one destination were the most common. Note that the unloading time at the last destination in every journey is not considered as work. Unloading time is also not considered for certain destinations even though they are part of a long journey [#]_. A Wagoner starts a new journey at daybreak (5 A.M. sharp) and this particular route 
 
@@ -68,7 +68,7 @@ Getting Started
             
             work_lim: float
                 The maximum time the Wagoner can spend working
-                per "day". A day is defined as the interval in between
+                per "day". A day is defined as the interval between
                 two consecutive periods of slumber.
             
             recess: float
@@ -92,6 +92,7 @@ Getting Started
             # Your code here
             pass
 
+For the scenario described above, assuming that every Wagoner starts his journey right now, the input to the function would look like :code:`create_plan(df, start = datetime.now(), work_lim = 14, recess = 8, long_break = 10, short_break = 0.5, overhead = 2)`.
 
 .. [#] I'm told that dragons roamed freely in the skies among other ridiculous claims.
 .. [#] Or something that was chemically indistinguishable from it at any rate

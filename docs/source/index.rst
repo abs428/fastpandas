@@ -29,4 +29,4 @@ Contents
 .. toctree::
 
    start
-   api
+   changes

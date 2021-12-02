@@ -5,7 +5,7 @@ One common practical issue is that the problem statement that the developer unde
 
 Other more time consuming issues arise due to miscommunication. After discussion with the Company's representatives, you realize that the definition of the parameter ``work_lim`` is
 
-    The maximum time the Wagoner can spend working per 'day'. A 'full' day looks like waking up at `start`, working for `recess` hours, taking a break that lasts for `short_break` hours, working till he has put in `work_lim` hours of work that day. Then, he goes to sleep.
+    The maximum time the Wagoner can spend working per 'day'. A 'full' day looks like waking up at ``start``, working for ``recess`` hours, taking a break that lasts for ``short_break`` hours, working till he has put in ``work_lim`` hours of work that day. Then, he goes to sleep.
 
 Please modify the code to adhere to the amended problem statement.
 
